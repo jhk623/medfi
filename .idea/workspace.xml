@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57180921-e8e4-4754-b81f-d9b7ee041c12" name="Default Changelist" comment="a">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/medfi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/depression_state.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/init_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/depression_state.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/init.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/depression_state.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/depression_state.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/depression_state.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/depression_state.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +64,7 @@
       <updated>1590388922715</updated>
       <workItem from="1590388924786" duration="1094000" />
       <workItem from="1590392230049" duration="18266000" />
+      <workItem from="1590556346455" duration="2447000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1590555235901</created>
@@ -105,22 +92,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="789" y="256" key="FileChooserDialogImpl/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590388967239" />
-    <state width="1439" height="181" key="GridCell.Tab.0.bottom" timestamp="1590556185371">
+    <state width="1439" height="181" key="GridCell.Tab.0.bottom" timestamp="1590558959076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1439" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
-    <state width="1439" height="181" key="GridCell.Tab.0.center" timestamp="1590556185371">
+    <state width="1439" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590558959076" />
+    <state width="1439" height="181" key="GridCell.Tab.0.center" timestamp="1590558959076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1439" height="181" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
-    <state width="1439" height="181" key="GridCell.Tab.0.left" timestamp="1590556185371">
+    <state width="1439" height="181" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590558959076" />
+    <state width="1439" height="181" key="GridCell.Tab.0.left" timestamp="1590558959076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1439" height="181" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
-    <state width="1439" height="181" key="GridCell.Tab.0.right" timestamp="1590556185371">
+    <state width="1439" height="181" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590558959076" />
+    <state width="1439" height="181" key="GridCell.Tab.0.right" timestamp="1590558959076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1439" height="181" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
+    <state width="1439" height="181" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590558959076" />
     <state x="667" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1590556348279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -135,6 +122,6 @@
     <state x="-1058" y="-504" width="991" height="1887" key="dock-window-1/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590552910677" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/medfi$medfi.coverage" NAME="medfi Coverage Results" MODIFIED="1590556379799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/medfi$medfi.coverage" NAME="medfi Coverage Results" MODIFIED="1590558959068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

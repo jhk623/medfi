@@ -112,7 +112,7 @@
 
                 <!-- Start of Relation -->
                 {% elif flag == 'relation' %}
-                    <div class="relation_graph">
+                    <div class="graph_background">
                         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                         <script type="text/javascript">
                             google.charts.load('current', {'packages':['corechart']});
@@ -169,12 +169,6 @@
                             var compareChart  = new google.visualization.ChartWrapper({
                                 'chartType': 'ColumnChart',
                                 'containerId': 'compare_chart_div',
-                                'options': {
-                                            'width': 300,
-                                            'height': 300,
-                                            'legend': 'none',
-                                            'chartArea': {'left': 15, 'top': 15, 'right': 0, 'bottom': 0},
-                                            }
                             });
 
                             var data = google.visualization.arrayToDataTable([
@@ -203,22 +197,18 @@
                         }
 
                     </script>
-                    <div id="compare_dashboard_div" style="border: 1px solid #ccc">
-                        <table class="columns">
-                            <tr>
-                                <td>
-                                    <div id="compare_control_div" style="padding-left: 2em; min-width: 250px"></div>
-                                    <div>
-                                        <button style="margin: 1em 1em 1em 2em" onclick="changeRange();">
-                                            See only depressed people
-                                        </button><br />
-                                    </div>
-                                </td>
-                                <td>
-                                    <div id="compare_chart_div"></div>
-                                </td>
-                            </tr>
-                        </table>
+
+                    <div class="graph_background">
+                        <div id="compare_dashboard_div">
+                            <div id="compare_chart_div" style="width:100%; height: 100%;"></div>
+                            <div id="compare_control_div" style="min-width: 250px"></div>
+                                <div>
+                                    <button style="margin: 1em 1em 1em 2em" onclick="changeRange();">
+                                        See only depressed people
+                                    </button><br />
+                                </div>
+                        </div>
+                        여기서 파란 색 바는 뺄건데 어떻게 할지 모르겠어서 놔뒀습니다.. 파란색이 선택 변수라서 빼면 depression level로 선택하는게 안되네요
                     </div>
 
                 <!-- End of Compare -->
@@ -226,9 +216,57 @@
 
                 <!-- Start of Recommendation -->
                 {% elif flag == 'recommendation' %}
-                    {% for i in range(1,10) %}
-                        <p>{{4}} x {{i}} = {{4*i}}</p>
-                    {% endfor %}
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                        google.charts.load('current', {packages:['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                        function drawChart() {
+                            var oldData = google.visualization.arrayToDataTable([
+                                ['Name', 'Time'],
+                                ['Sleeping', 11],
+                                ['Walking', 3],
+                                ['Youtube', 1],
+                                ['Instagram', 1]
+                            ]);
+
+                            var newData = google.visualization.arrayToDataTable([
+                                ['Name', 'Time'],
+                                ['Sleeping', 8],
+                                ['Walking', 1],
+                                ['Youtube', 5],
+                                ['Instagram', 3]
+                            ]);
+
+                            var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
+
+                            var options = { legend: { position: 'bottom' },
+                                            diff: { newData: {color: '#00DDDD', widthFactor: 0.5},
+                                                    oldData: {color: '#BBBBBB'}
+                                            }
+                            };
+
+                            var diffData = barChartDiff.computeDiff(oldData, newData);
+
+                            barChartDiff.draw(diffData, options);
+                        }
+
+                    </script>
+
+                    <div class="graph_background">
+                        <table class="columns">
+                            <tr>
+                                <td>
+                                    <div id="barchart_diff" style='width: 450px; height: 250px; display: inline-block'>
+                                    </div>
+                                </td>
+                                <td>
+                                    Now you are in depression level 1<br>
+                                    Sleeping 3 more hours can help you to feel less depressed.<br>
+                                    Walking 2 more hours can help you to feel less depressed.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 <!-- End of Recommendation -->
 
 
