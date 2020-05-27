@@ -121,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1439" height="181" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
-    <state x="667" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1590392233466">
+    <state x="667" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1590556348279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590392233466" />
+    <state x="667" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556348279" />
     <state x="671" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590555208549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -135,6 +135,6 @@
     <state x="-1058" y="-504" width="991" height="1887" key="dock-window-1/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590552910677" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/medfi$medfi.coverage" NAME="medfi Coverage Results" MODIFIED="1590554776860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/medfi$medfi.coverage" NAME="medfi Coverage Results" MODIFIED="1590556379799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
