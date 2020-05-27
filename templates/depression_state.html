@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/depression_state.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Noto+Sans&family=Rasa:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <title>Depression state</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Depression management</header>
+    </div>
+
+    <div class="container">
+        <div class="tab">
+            <button>
+                <a href="{{url_for('home')}}">User 1</a>
+            </button>
+            <button>
+                <a href="{{url_for('state')}}">Depression State</a>
+            </button>
+            <button>
+                <a href="{{url_for('relation')}}">Relation</a>
+            </button>
+            <button>
+                <a href="{{url_for('compare')}}">Compare</a>
+            </button>
+            <button>
+                <a href="{{url_for('recommendation')}}">Recommendation</a>
+            </button>
+        </div>
+        <div class="content">
+            <p>
+                <!-- Start of Depression State -->
+                {% if flag == 'depression_state' %}
+                    <div id="weekely">
+                    <p>Depression state</p>
+                    <div id="calender"></div>
+                    <script>
+                        var a_text=["Depression level4", "Depression level2", "excited", "Depression level1","neutral", "Depression level3","neutral"];
+                        var xValues=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Sat','Sun'];
+                        var zValues=[[-9,-4,8,-2,1,-6,0]];
+
+                        var data=[
+                            {
+                                z:zValues,
+                                x: xValues,
+                                y:[],
+                                type:'heatmap',
+                                zmin: "-9",
+                                zmax: "9",
+                                colorbar: {
+                                    title : "Emotional state"
+                                }
+                            }
+                        ];
+                        var layout={
+                            title: "Weekly emotional state",
+                            annotations: [],
+                            yaxis: {visible: false}
+                        };
+                        var textColor="";
+                        for (i=0; i<xValues.length; i+=1){
+                            var currentvalue=(zValues[i]);
+                            var result={
+                                x:xValues[i],
+                                text : a_text[i],
+                                showarrow:false,
+                            };
+                            layout.annotations.push(result);
+                        }
+                        Plotly.newPlot('calender', data, layout);
+                    </script>
+                    <div>
+                        Average depression level : level 1<br>
+                        If you want to see detail information about each day, then click a specific day.<br>
+                    </div>
+                </div>
+                <div id="day">
+                    <p>Detail information</p>
+                    <input class="date" type="date">
+                    <div id="day-graph">
+                        <script>
+                            var data1 = {
+                                 type: 'bar',
+                                 x: [-2.1, 2, 2.7],
+                                 y: ['Valence', 'Arousal', 'Stress'],
+                                name: 'user1',
+                                orientation: 'h'
+                                };
+                            var data2={
+                                type: 'bar',
+                                 x: [3, -2, -1],
+                                 y: ['Valence', 'Arousal', 'Stress'],
+                                name: 'average',
+                                orientation: 'h'
+                            };
+                            var data=[data1, data2];
+                            var layout={
+                                barmode:'group',
+                                xaxis:{
+                                    range:[-3,3]
+                                }
+                            };
+                            Plotly.newPlot('day-graph', data,layout);
+                        </script>
+                    </div>
+                </div>
+                <!-- End of Depression State -->
+
+
+                <!-- Start of Relation -->
+                {% elif flag == 'relation' %}
+                    <div class="relation_graph">
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawVisualization);
+
+                            function drawVisualization() {
+                                // Some raw data (not accurate)
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Depression level', 'Sleeping', 'Walking', 'Youtube', 'Instagram'],
+                                    ['Excited',           15,         38,         22,           8],
+                                    ['Neutral',           13,         20,         99,           68],
+                                    ['Level 1',           17,         67,         87,           7],
+                                    ['Level 2',           13,         10,         15,           8],
+                                    ['Level 3',           13,         91,         29,           26],
+                                    ['Level 4',           13,         91,         29,           26]
+                                ]);
+
+                                var options = {
+                                    title : 'Depression State and Life Style',
+                                    vAxis: {title: 'Time (hour)'},
+                                    hAxis: {title: 'Depression State'},
+                                    seriesType: 'bars',
+                                    //series: {5: {type: 'line'}}
+                                };
+
+                                var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+                        <div id="chart_div" style="height: 80%; top: 15%;"></div>
+                    </div>
+                <!-- End of Relation -->
+
+
+                <!-- Start of Compare -->
+                {% elif flag == 'compare' %}
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                        google.charts.load('current', {'packages':['corechart', 'controls']});
+                        google.charts.setOnLoadCallback(drawStuff);
+
+                        function drawStuff() {
+                            var dashboard = new google.visualization.Dashboard(
+                                document.getElementById('compare_dashboard_div'));
+
+                            var compareSlider = new google.visualization.ControlWrapper({
+                                'controlType': 'NumberRangeFilter',
+                                'containerId': 'compare_control_div',
+                                'options': {
+                                            'filterColumnLabel': 'Depression Level',
+                                            }
+                            });
+
+                            var compareChart  = new google.visualization.ChartWrapper({
+                                'chartType': 'ColumnChart',
+                                'containerId': 'compare_chart_div',
+                                'options': {
+                                            'width': 300,
+                                            'height': 300,
+                                            'legend': 'none',
+                                            'chartArea': {'left': 15, 'top': 15, 'right': 0, 'bottom': 0},
+                                            }
+                            });
+
+                            var data = google.visualization.arrayToDataTable([
+                                ['ID', 'Depression Level', 'Sleeping Time'],
+                                ['P0001' , -1, 13],
+                                ['P0002', 1, 11],
+                                ['P0003', 3, 9],
+                                ['P0004', 4, 4],
+                                ['P0005', 3, 18],
+                                ['P0006', 0, 10],
+                                ['P0007', 2, 10]
+                            ]);
+
+                            dashboard.bind(compareSlider, compareChart);
+                            dashboard.draw(data);
+
+                            changeRange = function() {
+                              compareSlider.setState({'lowValue': 1, 'highValue': 4});
+                              compareSlider.draw();
+                            };
+
+                            //changeOptions = function() {
+                            //    programmaticChart.setOption('is3D', true);
+                            //    programmaticChart.draw();
+                            //};
+                        }
+
+                    </script>
+                    <div id="compare_dashboard_div" style="border: 1px solid #ccc">
+                        <table class="columns">
+                            <tr>
+                                <td>
+                                    <div id="compare_control_div" style="padding-left: 2em; min-width: 250px"></div>
+                                    <div>
+                                        <button style="margin: 1em 1em 1em 2em" onclick="changeRange();">
+                                            See only depressed people
+                                        </button><br />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="compare_chart_div"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                <!-- End of Compare -->
+
+
+                <!-- Start of Recommendation -->
+                {% elif flag == 'recommendation' %}
+                    {% for i in range(1,10) %}
+                        <p>{{4}} x {{i}} = {{4*i}}</p>
+                    {% endfor %}
+                <!-- End of Recommendation -->
+
+
+                <!-- Start of Exception -->
+                {% else %}
+                    <button>
+                        <a href="{{url_for('home')}}">Recommendation</a>
+                    </button>
+                {% endif %}
+                <!-- End of Exception -->
+            </p>
+        </div>
+    </div>
+</body>
+</html>

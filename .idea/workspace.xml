@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57180921-e8e4-4754-b81f-d9b7ee041c12" name="Default Changelist" comment="a">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/medfi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/depression_state.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/init_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/depression_state.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1cO9lO4uTu0jP0tV93UYl34eukl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../programming assignment 3/app.py" />
+  </component>
+  <component name="RunManager">
+    <configuration name="medfi" type="Python.FlaskServer">
+      <module name="medfi" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57180921-e8e4-4754-b81f-d9b7ee041c12" name="Default Changelist" comment="" />
+      <created>1590388922715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590388922715</updated>
+      <workItem from="1590388924786" duration="1094000" />
+      <workItem from="1590392230049" duration="18266000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1590555235901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590555235901</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="468" y="102" width="908" height="814" key="CommitChangelistDialog2" timestamp="1590555256201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="468" y="102" width="908" height="814" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590555256201" />
+    <state x="789" y="256" key="FileChooserDialogImpl" timestamp="1590388967239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="789" y="256" key="FileChooserDialogImpl/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590388967239" />
+    <state width="1439" height="181" key="GridCell.Tab.0.bottom" timestamp="1590556185371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
+    <state width="1439" height="181" key="GridCell.Tab.0.center" timestamp="1590556185371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="181" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
+    <state width="1439" height="181" key="GridCell.Tab.0.left" timestamp="1590556185371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="181" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
+    <state width="1439" height="181" key="GridCell.Tab.0.right" timestamp="1590556185371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="181" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590556185371" />
+    <state x="667" y="326" key="com.intellij.ide.util.TipDialog" timestamp="1590392233466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="326" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590392233466" />
+    <state x="671" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590555208549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="671" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590555208549" />
+    <state x="-1058" y="-504" width="991" height="1887" key="dock-window-1" timestamp="1590552910677">
+      <screen x="-1080" y="-504" width="1080" height="1880" />
+    </state>
+    <state x="-1058" y="-504" width="991" height="1887" key="dock-window-1/0.0.1920.1040/-1080.-504.1080.1880/1920.0.1920.1040@0.0.1920.1040" timestamp="1590552910677" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/medfi$medfi.coverage" NAME="medfi Coverage Results" MODIFIED="1590554776860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
